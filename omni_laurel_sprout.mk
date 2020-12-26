@@ -27,17 +27,12 @@ $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
-PRODUCT_NAME := omni_$(PRODUCT_NAME)
+PRODUCT_NAME := omni_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
 # Build Prop Overrides
-PRODUCT_BUILD_PROP_OVERRIDES += \
-     BUILD_FINGERPRINT := "Xiaomi/laurel_sprout/laurel_sprout:9/PKQ1.190416.001/V10.3.4.0.PFQMIXM:user/release-keys" \
-     BUILD_NUMBER := "V10.3.4.0.PFQMIXM" \
-     PRODUCT_NAME="laurel_sprout" \
-     TARGET_DEVICE="laurel_sprout"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.build.date.utc \
